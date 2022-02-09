@@ -1,14 +1,3 @@
-﻿@model List<WishList.Models.Item>
-<h1>Wishlist</h1>
-<a asp-action="create">Add Item</a>
-    <ul>
-     @if(Model != null){
-        @foreach (var item in Model)
-    {
-        <li>@item.Description</li>
-        <a asp-action="delete" asp-route-id="Id">delete</a>
-    }
-    }
-    </ul>
- <a asp-action="Index" asp-controller="Item">View wishlist</a>
-    
+﻿<h1>Welcome</h1>
+
+<a asp-action="Index" asp-controller="Item">View Wishlist</a>
